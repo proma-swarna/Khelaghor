@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;700;800&display=swap');
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ html,body{
+     height: 100%;
+ }
+ body{
+    font-family: 'Dosis', sans-serif;
+ }
+ p,a{
+     font-weight: 300;
+     text-transform: capitalize;
+ }
+ a{
+     text-decoration: none;
+ }
+ h1,h2,h3,h4,h5,h6{
+     font-weight: 700;
+     text-transform: capitalize;
+ }
+ ul{
+     list-style: none;
+ }
+ img{
+     max-width: 100%;
+     vertical-align: middle;
+ }
+ .text-right{
+     text-align: right;
+ }
+ .text-left{
+     text-align: left;
+ }
+ .text-justify{
+     text-align: justify;
+ }
+ .pt-100{
+     padding-top: 100px;
+ }
+ .pb-100{
+     padding-bottom: 100px;
+ }
+ .pt-50{
+     padding-top: 50px;
+ }
+ .pb-50{
+    padding-bottom: 50px;
+}
+ .mt-100{
+     margin-top: 100px;
+ }
+ .mb-100{
+     margin-bottom: 100px;
+ }
+ .mt-50{
+    margin-bottom: 50px;
+}
+ .mb-50{
+    margin-bottom: 50px;
+}
+
+/* Header area */
+.top {
+    padding: 10px 0;
+    background-color: salmon;
+  }
+  .top-left a{
+    padding: 0 6px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .top-left i,.top-right i{
+    padding: 0 6px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .top-right a {
+	display: inline-block;
+	color: #000;
+	background-color: #fff;
+	padding: 2px 15px;
+	font-weight: bold;
+}
+.logo {
+    padding: 0px 50px;
+  }
+  .logo a {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .menu ul li {
+    display: inline-block;
+    padding: 8px 20px;
+  }
+  .menu ul li a {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+  }
