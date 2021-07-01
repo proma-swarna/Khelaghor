@@ -87,7 +87,7 @@ img{
 	font-weight: bold;
 }
 .header{
-    background-image: linear-gradient(to right,#8D2486,#2A36B3,#42AFCA,#348F51,#F8CE21,#FF5030,#EB2139);
+    background-image: linear-gradient(to right,#8D2486,#2A36B3,#42AFCA,#005a1d,#F8CE21,#FF5030,#EB2139);
 }
 .logo {
     padding: 0px 50px;
@@ -182,6 +182,70 @@ img{
 }
 .about-content i {
 	color: #EB2139;
-	font-size: 30px;
-	padding: 0px 10px;
+	font-size: 20px;
+    padding: 0px 8px;
+}
+.about-content i:hover{
+    color: #2A36B3;
+}
+.about-content img{
+    position: absolute;
+	top: 50%;
+}
+.about-right{
+    position: relative;
+}
+.about-right .img1,.about-right .img2,.about-right .img3{
+    position: absolute;
+}
+.about-right .img1 {
+	top: 38%;
+	right: -80px;
+}
+.about-right .img2{
+    top: -121px;
+    transition: .7s;
+}
+.about-right .img3 {
+	top: 38%;
+	left: -56px;
+}
+.about-right .img2:hover{
+    left: 26%;
+}
+/*section title start*/
+.section-title{
+    background-position: center;
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    color: #fff;
+}
+.back-clr,.back-clr2,.back-clr3,.back-clr4{
+    padding: 22px;
+    border-radius: 15%;
+}
+.back-clr i,.back-clr2 i,.back-clr3 i,.back-clr4 i{
+    font-size: 35px;
+    padding: 8px;
+    transition: .3s;
+}
+.back-clr h5,.back-clr2 h5,.back-clr3 h5,.back-clr4 h5{
+    font-size: 22px;
+    padding: 10px;
+}
+.back-clr{
+    background-image: linear-gradient(#8D2486,#2A36B3,#42AFCA);
+}
+.back-clr2{
+    background-image: linear-gradient(#005a1d,#FF5030,#F8CE21);
+}
+.back-clr3{
+    background-image: linear-gradient(#EB2139,#8D2486,#2A36B3);
+}
+.back-clr4{
+    background-image: linear-gradient(#F8CE21,#42AFCA,#EB2139);
+}
+.back-clr i:hover,.back-clr2 i:hover,.back-clr3 i:hover,.back-clr4 i:hover{
+    transform: rotate(70deg);
 }
