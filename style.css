@@ -159,11 +159,11 @@ img{
 .about-content{
 
 }
-.about-content span{
+.about-content span,.title span{
     color: #EB2139;
     font-weight: bold;
 }
-.about-content h3{
+.about-content h3,.title h3{
     background:linear-gradient(#EB2139,#8D2486,#2A36B3);
     -webkit-text-fill-color:transparent;
     -webkit-background-clip:text;
@@ -192,24 +192,40 @@ img{
     position: absolute;
 	top: 50%;
 }
+.bar .single-progress {
+    padding-bottom: 18px;
+  }
+.bar .single-progress  h5 {
+    color: #ED2139;
+}
+.progress-bar {
+	background-image: linear-gradient(to left,#EB2139,#8D2486,#2A36B3);
+}
 .about-right{
     position: relative;
 }
-.about-right .img1,.about-right .img2,.about-right .img3{
+.about-right .img1,.about-right .img2,.about-right .img3,.about-right .img4{
     position: absolute;
 }
+
 .about-right .img1 {
-	top: 38%;
+	top: 226px;
 	right: -80px;
 }
 .about-right .img2{
-    top: -121px;
+    top: -43px;
     transition: .7s;
+    width: 220px;
 }
 .about-right .img3 {
-	top: 38%;
+	top: 226px;
 	left: -56px;
 }
+.about-right .img4 {
+    top: 92%;
+    z-index: -1;
+    left: 103px;
+  }
 .about-right .img2:hover{
     left: 26%;
 }
@@ -217,18 +233,18 @@ img{
 .section-title{
     background-position: center;
     background-size: cover;
-    height: 80%;
+    height: 100%;
     width: 100%;
     color: #fff;
+    position: relative;
+    z-index: -1;
 }
 .back-clr,.back-clr2,.back-clr3,.back-clr4{
     padding: 22px;
-    border-radius: 15%;
 }
-.back-clr i,.back-clr2 i,.back-clr3 i,.back-clr4 i{
-    font-size: 35px;
-    padding: 8px;
-    transition: .3s;
+.back-clr img,.back-clr2 img,.back-clr3 img,.back-clr4 img{
+    border-radius: 6%;
+    width: 180px;
 }
 .back-clr h5,.back-clr2 h5,.back-clr3 h5,.back-clr4 h5{
     font-size: 22px;
@@ -236,16 +252,71 @@ img{
 }
 .back-clr{
     background-image: linear-gradient(#8D2486,#2A36B3,#42AFCA);
+    position: relative;
+}
+.back-clr::after{
+    background-color: #F37145;
+}
+.back-clr::after,.back-clr2::after,.back-clr3::after,.back-clr4::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	right: -8px;
+	bottom: -8px;
 }
 .back-clr2{
     background-image: linear-gradient(#005a1d,#FF5030,#F8CE21);
+    position: relative;
+}
+.back-clr2::after{
+    background-color: #8E44AD;
 }
 .back-clr3{
     background-image: linear-gradient(#EB2139,#8D2486,#2A36B3);
+    position: relative;
+}
+.back-clr3::after{
+    background-color: #33AEA8;
 }
 .back-clr4{
     background-image: linear-gradient(#F8CE21,#42AFCA,#EB2139);
+    position: relative;
 }
-.back-clr i:hover,.back-clr2 i:hover,.back-clr3 i:hover,.back-clr4 i:hover{
+.back-clr4::after{
+    background-color: #E35565;
+}
+.back-clr:hover i,.back-clr2:hover i,.back-clr3:hover i,.back-clr4:hover i{
     transform: rotate(70deg);
+}
+/* section title area end*/
+/* teachers area start*/
+.team{
+    position: relative;
+}
+/*.team-hover {
+	position: absolute;
+	top: 33px;
+	right: 4px;
+    background-color: #333;
+	height: 76%;
+	width: 10%;
+	top: 0;
+	z-index: 1;
+	left: 90%;
+	border-radius: 0px 11px 2px 20px;
+}
+.team-hover i {
+	display: block;
+	padding-bottom: 24px;
+	font-size: 25px;
+	color: #fff;
+}*/
+.team h4{
+    padding-top: 15px;
+}
+.team img{
+    border-radius: 7%;
+    position: relative;
 }
