@@ -177,7 +177,7 @@ img{
     font-weight: 600;
     color: #333;
 }
-.about-content h5{
+.about-content h5,.single-table h4{
     display: inline-block;
     background:linear-gradient(#EB2139,#8D2486,#2A36B3);
     -webkit-text-fill-color:transparent;
@@ -301,7 +301,7 @@ img{
 .team-icon {
 	position: absolute;
 	right: 4px;
-    background-color: #333;
+    background-image: linear-gradient(#EB2139,#8D2486,#2A36B3);
 	height: 76%;
 	width: 10%;
 	top: 0;
@@ -318,6 +318,7 @@ img{
 }
 .team1 h4,.team2 h4,.team3 h4{
     padding-top: 15px;
+    color: #EB2139;
 }
 .team1 img,.team2 img,.team3 img{
     border-radius: 7%;
@@ -326,7 +327,7 @@ img{
 	position: absolute;
 	top: 0;
 	left: 29px;
-	background-color: #333;
+	background-image: linear-gradient(#EB2139,#8D2486,#2A36B3);
 	height: 76%;
 	width: 92%;
 	border-radius: 7%;
@@ -369,6 +370,7 @@ img{
 }
 .pd-125 h3{
     padding-top: 22px;
+    color: rgb(139, 5, 5);
 }
 .pd-125 p {
 	text-align: justify;
@@ -438,7 +440,7 @@ img{
 	padding: 35px;
 	box-shadow: 0px 11px 11px -5px;
 	border-bottom: 3px solid #EBEBEC;
-    transition: .5s;
+    transition: .8s;
 }
 .single-clients p {
 	font-size: 15px;
@@ -451,7 +453,71 @@ img{
 	background-color: #EB2139;
 	color: #fff;
 	overflow: hidden;
+    transform: scale(1.1);
 }
 .owl-item.active.center .single-clients i{
     color: #fff;
 }
+/* price area start */
+.price{
+	background-color: #F2EEF2;
+}
+.list-menu {
+	justify-content: center;
+	display: flex;
+	text-transform: capitalize;
+    padding: 0;
+}
+.list-menu li {
+	padding: 5px 20px;
+	border: 1px solid #DDDEDE;
+	background-color: #fff;
+    cursor: pointer;
+    transition: .7s;
+}
+.list-menu li:hover{
+    background-color: #8D2486;
+	color: #fff;
+	border: 0;
+}
+.single-table {
+	text-align: center;
+	padding: 40px;
+	border: 1px solid #DDDEDE;
+	margin-bottom: 30px;
+	background-color: #fff !important;
+    transition: .3s;
+}
+.single-table:hover {
+	transform: translatey(-20px);
+}
+.single-table i {
+	display: block;
+	font-size: 55px;
+	padding: 20px;
+    color: #8D2486;
+}
+.single-table span {
+	font-size: 30px;
+	color: #F03239;
+	font-weight: bold;
+}
+.single-table p {
+	font-size: 15px;
+	font-weight: bold;
+	color: #4F4F4F;
+}
+.single-table ul{
+    padding-left: 0;
+}
+.single-table ul li {
+	text-transform: capitalize;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom: 1px solid #DDDEDE;
+    font-size: 15px;
+}
+.single-table ul li:last-child{
+    border-bottom: 0;
+}
+/* price area end */
