@@ -1,10 +1,11 @@
 $(".clients").owlCarousel({
     margin: 30,
-    loop: 'false',
-    autoplay: 'false',
+    loop: 'true',
+    autoplay: 'true',
     autoplayTimeout: 5000,
     center: 'true',
-    items: 3
+    items: 3,
+    dots: 'true'
 });
 // init Isotope
     var $grid = $('.table-details').isotope({
@@ -14,4 +15,12 @@ $(".clients").owlCarousel({
     $('.list-menu').on( 'click', 'li', function() {
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({ filter: filterValue });
+    });
+
+$(".blog-details").owlCarousel({
+        margin: 40,
+        items: 3,
+        loop: 'true',
+        nav: 'true',
+        navText: ['Previous','Next']
     });
