@@ -22,5 +22,13 @@ $(".blog-details").owlCarousel({
         items: 3,
         loop: 'true',
         nav: 'true',
-        navText: ['Previous','Next']
+        navText: ['<i class="fas fa-caret-left"></i>','<i class="fas fa-caret-right"></i>']
+    });
+
+$(".sponsor").owlCarousel({
+        margin: 100,
+        loop: 'true',
+        autoplay: 'true',
+        autoplayTimeout: 5000,
+        items: 6,
     });

@@ -177,7 +177,7 @@ img{
     font-weight: 600;
     color: #333;
 }
-.about-content h5,.single-table h4{
+.about-content h5,.single-table h4, .address h4,.contact-form h3{
     display: inline-block;
     background:linear-gradient(#EB2139,#8D2486,#2A36B3);
     -webkit-text-fill-color:transparent;
@@ -526,8 +526,14 @@ img{
 	background-color: #8D2486;
 	color: #fff;
 }
+.blog-border {
+	border-right: 1px dotted #fff;
+	padding-top: 150px;
+	padding-left: 40px;
+	margin-bottom: 23px;
+}
 .padding{
-	border-right: 1px dotted#fff;
+    border-right: 1px dotted #fff;
 	padding-top: 150px;
 	padding-left: 40px;
     padding-bottom: 40px;
@@ -540,7 +546,79 @@ img{
 }
 .single-blog i {
 	font-size: 18px;
+    transition: .4s;
 }
-.blog-details{
-    position: relative;
+.single-blog i:hover{
+    transform: translate(30px);
+    color: #E4BE3F;
+}
+.blog-details .owl-prev {
+	position: absolute;
+	left: -18px;
+	top: 50%;
+}
+.blog-details .owl-next {
+	position: absolute;
+	right: -12px;
+    top: 50%;
+}
+.blog-details .owl-prev i ,.blog-details .owl-next i{
+	padding: 10px;
+    font-size: 35px;
+}
+.sponsor{
+    border-top: 1px dotted #fff;
+}
+.sponsor .owl-carousel .owl-item img{
+	width: 50%;
+}
+/* blog area end */
+/* contact area start */
+  .address i {
+    font-size: 30px;
+    padding-right: 15px;
+    color: #F33239;
+  }
+.address p {
+    font-size: 15px;
+    padding: 0px 22px;
+  }
+.ad-shadow {
+	padding: 51px 15px;
+	box-shadow: -6px 6px 6px -7px;
+	transition: .5s;
+}
+.ad-shadow:hover{
+	background-color: #E4BE3F;
+}
+.contact-form {
+	background-color: #E4BE3F;
+	padding: 10px;
+	border-radius: 20px;
+}
+.contact-form h3{
+    padding-bottom: 20px;
+}
+.contact-form input,.contact-form textarea {
+	width: 100%;
+	border: 0;
+	padding: 5px;
+	margin-bottom: 25px;
+}
+.contact-form textarea {
+    padding-bottom: 10px;
+}
+.button {
+	display: inline-block;
+	padding: 6px 60px;
+	background-color: #882487;
+	color: #fff;
+    transition: .5s;
+    overflow: hidden;
+}
+.button:hover {
+	background-color: #F33239;
+	color: #fff;
+	transform: scale(1.1);
+	box-shadow: 1px 1px 1px 1px #000;
 }
