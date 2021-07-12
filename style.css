@@ -82,6 +82,9 @@ img{
     font-size: 18px;
     cursor: pointer;
   }
+  .top-right{
+      text-align: right;
+  }
 .top-right a {
 	display: inline-block;
 	color: #025BA7;
